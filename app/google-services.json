@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "381770090480",
+    "project_id": "asistencia-bda7f",
+    "storage_bucket": "asistencia-bda7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381770090480:android:7a724b1bcc52ffd41f7f35",
+        "android_client_info": {
+          "package_name": "com.darwinpz.asistencia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwSLwGYaA51gb0lASro7xFyeSm6mseh6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
