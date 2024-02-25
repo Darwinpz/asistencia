@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/txt_rol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="rol"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="Imagen"
+                android:src="@drawable/perfil"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                >
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Nombre:"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/editText_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="Nombre completo"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        >
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Telefono:"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/editText_telefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="Numero telefónico"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        >
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Dirección:"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/editText_direccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="Dirección / Domicilio "
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        >
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_actualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Actualizar Perfil"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:backgroundTint="@color/success"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cerrar Sesión"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:backgroundTint="@color/danger"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
