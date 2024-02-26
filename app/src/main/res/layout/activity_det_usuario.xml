@@ -3,12 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Det_usuario">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Volver"
+        android:background="@color/proyecto"
+        android:navigationIcon="@drawable/ic_back"
+        android:titleTextColor="@color/white"
+        >
+
+    </Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="UselessParent">
+        tools:ignore="UselessParent"
+        android:layout_below="@id/toolbar"
+        >
 
 
         <LinearLayout
@@ -17,26 +32,6 @@
             android:orientation="vertical"
             android:gravity="center"
             >
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                >
-
-                <TextView
-                    android:id="@+id/txt_rol"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="rol"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
-                    android:textSize="20sp"
-                    >
-
-                </TextView>
-
-            </androidx.cardview.widget.CardView>
 
             <ImageView
                 android:layout_margin="5dp"
@@ -145,6 +140,27 @@
 
                     </EditText>
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="* Rol:"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/spinner_rol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        >
+
+                    </Spinner>
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -163,11 +179,11 @@
             </Button>
 
             <Button
-                android:id="@+id/btn_salir"
+                android:id="@+id/btn_desactivar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Cerrar Sesión"
+                android:text="Desactivar Usuario"
                 android:padding="15dp"
                 android:textSize="20sp"
                 android:backgroundTint="@color/danger"

@@ -12,4 +12,11 @@
     <string name="menu_perfil">Perfil</string>
     <string name="menu_usuarios">Usuarios</string>
 
+
+    <string-array name="roles">
+        <item>Selecciona</item>
+        <item>Cliente</item>
+        <item>Administrador</item>
+    </string-array>
+
 </resources>

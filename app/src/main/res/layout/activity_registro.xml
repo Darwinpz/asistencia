@@ -4,11 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Registro">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Volver"
+        android:background="@color/proyecto"
+        android:navigationIcon="@drawable/ic_back"
+        android:titleTextColor="@color/white"
+        >
+
+
+    </Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
         tools:ignore="UselessParent">
 
 
@@ -22,8 +36,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="35sp"
-                android:text="@string/app_name"
+                android:textSize="25sp"
+                android:text="Menú de registro"
                 android:textAlignment="center"
                 android:textStyle="bold|italic"
                 >
@@ -47,6 +61,30 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:hint="Correo electrónico"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                >
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Nombre:"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Nombre completo"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:inputType="textEmailAddress"
@@ -81,11 +119,11 @@
             </EditText>
 
             <Button
-                android:id="@+id/btn_ingresar"
+                android:id="@+id/btn_registrarme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Iniciar sesión"
+                android:text="Registrarme"
                 android:padding="15dp"
                 android:textSize="20sp"
                 android:backgroundTint="@color/success"
@@ -93,22 +131,11 @@
 
             </Button>
 
-            <Button
-                android:id="@+id/btn_registro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Registrarme"
-                android:padding="15dp"
-                android:textSize="20sp"
-                android:backgroundTint="@color/proyecto"
-                >
-
-            </Button>
 
         </LinearLayout>
 
 
     </ScrollView>
+
 
 </RelativeLayout>

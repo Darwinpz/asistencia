@@ -5,23 +5,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:ignore="UselessParent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:id="@+id/layout_opciones"
+        >
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:text="Crear Usuarios"
+            android:padding="15dp"
+            android:backgroundTint="@color/success"
             >
 
+        </Button>
 
-        </LinearLayout>
+    </LinearLayout>
 
+    <TextView
+        android:id="@+id/txt_contador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_opciones"
+        android:text="0 Usuarios"
+        android:gravity="end"
+        android:layout_margin="5dp"
+        android:textColor="@color/danger"
+        android:textStyle="bold"
+        >
 
-    </ScrollView>
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_cargar"
+        android:layout_below="@id/txt_contador"
+        >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:id="@+id/progressBar"
+            >
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/txt_existe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aún no existen Usuarios"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_cargar"
+        android:id="@+id/recyclerview_usuarios"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>
